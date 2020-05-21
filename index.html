@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Govind Tank</title>
+         <link rel="icon" type="image/png" href="assets/img/title_pic.png">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="website.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" media="screen" />
+        <meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/ns.html?id=GTM-P3K3PWL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GTM-P3K3PWL');
+</script>
+    
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 id="title">
+                    <span>Govind</span> Kotwani
+                </h1>
+		<p style="font-size:115%; color:black">ANDROID APPLICATION DEVELOPER | TECH ENTHUSIAST</p>
+		<meta name=description content=" Learner | Explorer | Android Developer ">
+            </header>
+            <ul class="icon-list">
+                <li class="facebook">
+                    <a target="_blank" href="https://www.facebook.com/govind.tank.77" title="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="twitter">
+                    <a target="_blank" href="https://twitter.com/govindtank4" title="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="med">
+                    <a target="_blank" href="https://medium.com/@govindtank">
+                        <i class="fa fa-medium"></i>
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a target="_blank" href="https://www.linkedin.com/in/govindtank"  title="Linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="github">
+                    <a target="_blank" href="https://github.com/govindtank/" title="Github">
+                        <i class="fa fa-github-square"></i>
+                    </a>
+		</li>
+            </ul>
+        </main>
+        <div id="particles-js" class="background"></div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vex-js/2.3.4/js/vex.combined.min.js"></script>
+        <script>
+		$(document).ready(function() {
+			var current_delay = 500;
+			$("#title").css("opacity", 0).animate({
+				opacity: 1
+			}, 1000);
+			$("#menu").css("opacity", 0).delay(current_delay).animate({
+				opacity: 1
+			}, 1000);
+			$(".icon-list li").delay(current_delay).each(function () {
+				current_delay += 100;
+				console.log(current_delay);
+				$(this).css({
+					opacity: 0,
+					top: "-20px"
+				}).delay(current_delay).animate({
+					opacity: 1,
+					top: 0
+				}, 100);
+			});
+			current_delay += 600;
+			$("#footer").delay(current_delay).css("opacity", 0).animate({
+				opacity: 1
+			}, 1000);
+			particlesJS.load('particles-js', 'particles.json', function() {
+				console.log('callback - particles-js config loaded');
+			});
+		});
+	</script>
+    </body>
+</html>
