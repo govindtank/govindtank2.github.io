@@ -3,25 +3,20 @@
     "value": 50,
     "density": {
       "enable": true,
-      "value_area": 700 // Denser the smaller the number.
+      "value_area": 700 
     }
   },
-  "color": { // The color for every node, not the connecting lines.
-    "value": "#01579b" // Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
+  "color": { 
+    "value": ["#9b0000", "#001378", "#0b521f"]
   },
   "shape": {
-      "type": "circle", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
-      "stroke": { // The border
+      "type": "star",
+      "stroke": { 
         "width": 1,
         "color": "#145ea8"
       },
-      "polygon": { // if the shape is a polygon
+      "polygon": { 
         "nb_sides": 5
-      },
-      "image": { // If the shape is an image
-        "src": "",
-        "width": 100,
-        "height": 100
       }
   },
   "opacity": {
@@ -34,7 +29,7 @@
   },
   "line_linked": {
     "enable": true,
-    "distance": 200, // The radius before a line is added, the lower the number the more lines.
+    "distance": 200, 
     "color": "#007ecc",
     "opacity": 0.5,
     "width": 2
@@ -42,12 +37,12 @@
   "move": {
     "enable": true,
     "speed": 2,
-    "direction": "top", // Move them off the canvas, either "none", "top", "right", "bottom", "left", "top-right", "bottom-right" et cetera...
+    "direction": "top", 
     "random": true,
-    "straight": false, // Whether they'll shift left and right while moving.
-    "out_mode": "out", // What it'll do when it reaches the end of the canvas, either "out" or "bounce".
+    "straight": false, 
+    "out_mode": "out", 
     "bounce": false,
-    "attract": { // Make them start to clump together while moving.
+    "attract": { 
       "enable": true,
       "rotateX": 600,
       "rotateY": 1200
